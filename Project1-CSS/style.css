@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+
+header{
+    background-color: #122A57;
+    height: 100px;
+    display: flex;
+    color: #fff;
+}
+
+header .list-items{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li a{
+    color: #fff;
+}
+
+header .menu{
+    justify-content: space-between;
+}
+
+.presentation{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation .presentation-text{
+    min-height: 200px;
+}
+
+.presentation .presentation-text h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #122A57;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#who-we-are{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#who-we-are h2{
+font-size: 32px;
+color: #122A57;
+display: flex;
+margin-bottom: 20px;
+}
+
+#who-we-are h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+#who-we-are p{
+    text-align: justify;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#who-we-are img{
+    min-width: 420px;
+}
+
+.external-container{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#services{
+flex-direction: column;
+padding-top: 50px;
+padding-bottom: 100px;
+}
+
+#services h2{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list .service-item{
+    text-align: center;
+}
+
+.service-item a{
+    width: 220px;
+    background-color: #fff;
+    color: #122A57;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+.service-item p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.service-item img{
+    width: 80%;
+    margin: auto;
+}
+
+#plans{
+flex-direction: column;
+min-height: 100vh;
+padding-top: 50px;
+}
+
+#plans h2{
+    font-size: 32px;
+    color: #122A57;
+}
+
+.plans-list{
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+}
+
+.plan-item{
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.plan-item .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.plan-item h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plan-item h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.plan-item ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.plan-item ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.plan-item ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 5px;
+}
+
+footer{
+    background-color: #122A57;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    justify-content: space-between;
+}
+
+/* Mobile */
+
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .presentation{
+        flex-direction: column-reverse;
+    }
+
+    .presentation .presentation-text{
+        width: 100%;
+    }
+
+    #who-we-are{
+        flex-direction: column-reverse;
+    }
+
+    #who-we-are img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .services-list{
+        flex-direction: column;
+    }
+
+    .service-item img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .plans-list{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .plans-list .plan-item{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
