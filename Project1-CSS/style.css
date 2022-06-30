@@ -254,6 +254,7 @@ footer{
 
     .presentation{
         flex-direction: column-reverse;
+        justify-content: center;
     }
 
     .presentation .presentation-text{
