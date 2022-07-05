@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-transform: none;
+    box-sizing: border-box;
+}
+
+html{
+    /*1 rem = 16px (User Agent) = 100% 
+  16px - 100%
+  10px  - X 
+  X = 62,5*/
+  font-size: 62.5%; /* 10 px*/
+  /*font-size: 10px; /* 10 px*/
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color:azure;
+    max-width: 900px;
+    margin: auto;
+}
+
+#title, .subtitle, .post-title{
+    color: blue;
+}
+
+.post-title{
+ font-size: 16px;
+ font-style: italic;   
+}
+
+.posts{
+    border: 3px solid green;
+    padding-left: 10px;
+}
+
+img{
+    width: 500px;
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}

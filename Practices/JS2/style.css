@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: none;
+  }
+
+  html{
+    /*1 rem = 16px (User Agent) = 100% 
+  16px - 100%
+  10px  - X 
+  X = 62,5*/
+  font-size: 62.5%; /* 10 px*/
+  /*font-size: 10px; /* 10 px*/
+}
+
+body {
+    display: flex;
+    height: 100vh;
+  }
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 10em;
+    height: 30vh;
+  }
+
+  h1{
+    font-size: 6em;
+    color:darkgoldenrod;
+  }
+
+  input{
+    border: .2em solid gold;
+  }
+
+  .inputField{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 17%;
+  }
+
+  button{
+    background-color: pink;
+    color: blueviolet;
+    border-radius: 10px;
+    height: 2em;
+    width: 4.5em;
+  }
+
+.inputList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
