@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/modal.css">
+    <title>Working with Object and Classes
+    </title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Object Bank</h1>
+        <button id="btn" class="btns">Open account</button>
+        <div id="accounts"></div>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Add new account</h2>
+            <p>Please enter all fields bellow</p>
+
+            <form name="add-acc-form" action="" id="add-acc-form">
+                <!-- Branch, Account number, type. Checking, Saving, Student-->
+                <div class="account-info">
+                    <div class="labels">
+                        <label for-id="branch">Branch:</label>
+                        <label for-id="account">Account Number:</label>
+                        
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="branch" name="branch" placeholder="Enter branch with 4 digits" maxlength="4" minlength="4" required>
+                        <input type="text" id="account" name="account" placeholder="Enter account number with 6 digits" maxlength="6" minlength="6" required>
+                    </div>
+                </div>
+                <p>Type of account</p>
+                <div class="account-type">
+                    <input class="radio" type="radio" name="type" id="saving" value="saving" checked>
+                    <label for="saving">Savings</label>
+                    <input class="radio" type="radio" name="type" id="checking" value="checking">
+                    <label for="checking">Checking</label>
+                    <input class="radio" type="radio" name="type" id="student" value="student">
+                    <label for="student">Student</label>
+                </div>
+                
+                <div class="credit-card">
+                    <p>Would you like a credit card?</p>
+                    <input class="radio" type="radio" name="credit" id="yes" value="yes" checked>
+                    <label for="yes">Yes</label>
+                    <input class="radio" type="radio" name="credit" id="no" value="no">
+                    <label for="no">No</label>
+                </div>
+
+                <div class="buttons">
+                    <button id="cancel">Cancel</button>
+                    <button id="confirm" type="submit" class="btns">Confirm</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script type='module' src="./assets/script/script.js"></script>
+</body>
+</html>
