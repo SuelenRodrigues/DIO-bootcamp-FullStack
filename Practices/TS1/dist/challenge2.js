@@ -25,4 +25,4 @@ var person4 = {
     occupation: Occupation.Baker
 };
 console.log(person4);
-//# sourceMappingURL=desafio2.js.map
+//# sourceMappingURL=challenge2.js.map

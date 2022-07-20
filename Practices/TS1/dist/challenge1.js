@@ -4,4 +4,4 @@ var employee = {
     name: "John"
 };
 console.log(employee);
-//# sourceMappingURL=desafio1.js.map
+//# sourceMappingURL=challenge1.js.map
